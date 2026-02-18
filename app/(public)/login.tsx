@@ -11,10 +11,17 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import { Ionicons } from "@expo/vector-icons";
+import { useRouter } from "expo-router";
 import { useState } from "react";
 
 export default function Login() {
 	const [secure, setSecure] = useState(true);
+
+	const route = useRouter();
+
+	const handleLogin = () => {
+		route.push("/home");
+	};
 
 	return (
 		<SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
@@ -108,7 +115,7 @@ export default function Login() {
 							</Text>
 						</View>
 
-						<Pressable style={styles.loginButton}>
+						<Pressable onPress={handleLogin} style={styles.loginButton}>
 							<Text style={styles.loginText}>Log in</Text>
 						</Pressable>
 					</View>
