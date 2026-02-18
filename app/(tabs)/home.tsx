@@ -403,7 +403,7 @@ export default function Home() {
 							style={{
 								backgroundColor: "#00a652",
 								flex: 1,
-								paddingVertical: 8,
+								paddingVertical: 12,
 								paddingHorizontal: 16,
 								borderRadius: 16,
 								gap: 4,
@@ -421,7 +421,7 @@ export default function Home() {
 							style={{
 								backgroundColor: "#3a0479",
 								flex: 1,
-								paddingVertical: 8,
+								paddingVertical: 12,
 								paddingHorizontal: 16,
 								borderRadius: 16,
 								gap: 4,
