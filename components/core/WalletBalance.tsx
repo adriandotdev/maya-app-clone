@@ -1,3 +1,4 @@
+import { formatToCurrency } from "@/utils/formatter";
 import {
 	ArrowDownLeft,
 	ArrowUpRight,
@@ -26,7 +27,7 @@ export default function WalletBalance() {
 					}}
 				>
 					<View>
-						<Text style={styles.walletBalance}>0.00</Text>
+						<Text style={styles.walletBalance}>{formatToCurrency(76000)}</Text>
 						<View style={{ display: "flex", flexDirection: "row", gap: 8 }}>
 							<Text style={{ color: "#5f5c5c", fontWeight: 500 }}>
 								Wallet balance
