@@ -1,4 +1,5 @@
 import { transactions } from "@/data/dummy";
+import { formatToCurrency } from "@/utils/formatter";
 import { Text, View } from "react-native";
 
 export default function Transactions() {
@@ -53,10 +54,7 @@ export default function Transactions() {
 								}}
 							>
 								{transaction.type === "outgoing" && "-"}
-								{transaction.amount.toLocaleString("en-PH", {
-									style: "currency",
-									currency: "PHP",
-								})}
+								{formatToCurrency(transaction.amount)}
 							</Text>
 						</View>
 					</View>
