@@ -1,6 +1,5 @@
+import { transactions } from "@/data/dummy";
 import { Text, View } from "react-native";
-
-const SAMPLE_TRANSACTION_AMOUNT = 153;
 
 export default function Transactions() {
 	return (
@@ -26,7 +25,7 @@ export default function Transactions() {
 
 			{/* Transaction Items */}
 			<View style={{ marginTop: 16, display: "flex", gap: 16 }}>
-				{[1, 2, 3, 4, 5].map((index) => (
+				{transactions.map((transaction, index) => (
 					<View
 						key={index}
 						style={{
@@ -36,21 +35,25 @@ export default function Transactions() {
 						}}
 					>
 						<View>
-							<Text style={{ color: "#919191" }}>Bills Payment for</Text>
-							<Text style={{ fontWeight: 500, fontSize: 16 }}>Maya Bank</Text>
+							<Text style={{ color: "#919191" }}>{transaction.descripton}</Text>
+							<Text style={{ fontWeight: 500, fontSize: 16 }}>
+								{transaction.entity}
+							</Text>
 						</View>
 						<View>
 							<Text style={{ textAlign: "right", color: "#919191" }}>
-								1 hour ago
+								{transaction.time}
 							</Text>
 							<Text
 								style={{
 									textAlign: "right",
 									fontWeight: 500,
 									fontSize: 16,
+									color: transaction.type === "receiving" ? "#00a652" : "black",
 								}}
 							>
-								{SAMPLE_TRANSACTION_AMOUNT.toLocaleString("en-PH", {
+								{transaction.type === "outgoing" && "-"}
+								{transaction.amount.toLocaleString("en-PH", {
 									style: "currency",
 									currency: "PHP",
 								})}
