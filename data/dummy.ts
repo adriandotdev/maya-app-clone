@@ -1,7 +1,28 @@
 import { Transaction } from "@/utils/types";
 import { Landmark, PartyPopper } from "lucide-react-native";
 
-export const headerItems = ["Wallet", "Savings", "Credit", "Loans", "Cards"];
+export const headerItems = [
+	{
+		label: "Wallet",
+		href: "/home",
+	},
+	{
+		label: "Savings",
+		href: "/savings",
+	},
+	{
+		label: "Credit",
+		href: "/credit",
+	},
+	{
+		label: "Loans",
+		href: "/loans",
+	},
+	{
+		label: "Cards",
+		href: "/cards",
+	},
+];
 
 export const appListItems = [
 	{

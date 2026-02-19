@@ -1,23 +1,17 @@
 import AdsList from "@/components/core/AdsList";
 import AppItems from "@/components/core/AppItems";
-import FloatingNav from "@/components/core/FloatingNav";
 import Footer from "@/components/core/Footer";
-import Header from "@/components/core/Header";
 import Rewards from "@/components/core/Rewards";
 import Transactions from "@/components/core/Transactions";
 import WalletBalance from "@/components/core/WalletBalance";
 import { useState } from "react";
 import { ScrollView, StyleSheet } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Home() {
 	const [selectedItem, setSelectedItem] = useState("Wallet");
 
 	return (
-		<SafeAreaView style={{ flex: 1, position: "relative", paddingBottom: 56 }}>
-			{/* HEADER */}
-			<Header selectedItem={selectedItem} setSelectedItem={setSelectedItem} />
-
+		<>
 			{/* CONTENT */}
 			<ScrollView contentContainerStyle={styles.content}>
 				{/* Wallet Balance Card */}
@@ -37,9 +31,7 @@ export default function Home() {
 
 				<Footer />
 			</ScrollView>
-
-			<FloatingNav />
-		</SafeAreaView>
+		</>
 	);
 }
 
