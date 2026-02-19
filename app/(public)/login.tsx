@@ -64,12 +64,25 @@ export default function Login() {
 									keyboardType="visible-password"
 									secureTextEntry={secure}
 								/>
+
+								<Text
+									style={{
+										color: "#00a652",
+										position: "absolute",
+										top: 8,
+										left: 20,
+										fontSize: 12,
+									}}
+								>
+									Password
+								</Text>
+								{/* Eye Icon */}
 								<Pressable
 									onPress={() => setSecure(!secure)}
 									style={{
 										position: "absolute",
 										right: 15,
-										top: 18,
+										top: 20,
 									}}
 								>
 									<Ionicons
@@ -146,6 +159,7 @@ const styles = StyleSheet.create({
 		backgroundColor: "#f9f9f9",
 		width: "100%",
 		padding: 20,
+		paddingTop: 28,
 		borderRadius: 16,
 	},
 	loginButton: {
