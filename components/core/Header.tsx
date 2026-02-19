@@ -1,4 +1,5 @@
 import { headerItems } from "@/data/dummy";
+import { Href, useRouter } from "expo-router";
 import {
 	Bell,
 	ChevronRight,
@@ -12,7 +13,13 @@ type HeaderProps = {
 };
 
 export default function Header(props: HeaderProps) {
+	const router = useRouter();
 	const { selectedItem, setSelectedItem } = props;
+
+	const handleTabPress = (item: { label: string; href: string }) => {
+		setSelectedItem(item.label);
+		router.push(item.href as Href);
+	};
 
 	return (
 		<View style={styles.header}>
@@ -41,25 +48,26 @@ export default function Header(props: HeaderProps) {
 			>
 				{headerItems.map((item, index) => (
 					<Pressable
-						onPress={() => setSelectedItem(item)}
+						onPress={() => handleTabPress(item)}
 						key={index}
 						style={{
-							backgroundColor: selectedItem === item ? "black" : "transparent",
+							backgroundColor:
+								selectedItem === item.label ? "black" : "transparent",
 							display: "flex",
 							justifyContent: "center",
 							alignItems: "center",
-							width: selectedItem === item ? 90 : 70,
+							width: selectedItem === item.label ? 90 : 70,
 							borderRadius: 15,
 							paddingVertical: 8,
 						}}
 					>
 						<Text
 							style={{
-								color: selectedItem === item ? "white" : "#919191",
+								color: selectedItem === item.label ? "white" : "#919191",
 								fontWeight: "bold",
 							}}
 						>
-							{item}
+							{item.label}
 						</Text>
 					</Pressable>
 				))}
