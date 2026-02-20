@@ -9,7 +9,7 @@ export default function AppItems() {
 					marginTop: 16,
 					display: "flex",
 					flexDirection: "row",
-					gap: 16,
+					gap: 8,
 				}}
 			>
 				{appListItems.slice(0, 4).map((item, index) => (
@@ -24,18 +24,20 @@ export default function AppItems() {
 					>
 						<View
 							style={{
-								backgroundColor: "#eee4e4",
+								backgroundColor: "#f4f6f5",
 								height: 60,
-								width: 70,
+								// width: 65,
+								width: "100%",
 								display: "flex",
 								justifyContent: "center",
 								alignItems: "center",
 								borderRadius: 10,
+								flex: 1,
 							}}
 						>
-							<item.icon color={"#00a652"} />
+							<item.icon color={"#00a652"} size={18} />
 						</View>
-						<Text style={{ maxWidth: 80, textAlign: "center" }}>
+						<Text style={{ maxWidth: 80, textAlign: "center", fontSize: 12 }}>
 							{item.label}
 						</Text>
 					</View>
@@ -62,18 +64,20 @@ export default function AppItems() {
 					>
 						<View
 							style={{
-								backgroundColor: "#eee4e4",
+								backgroundColor: "#f4f6f5",
 								height: 60,
-								width: 70,
+								// width: 65,
+								width: "100%",
 								display: "flex",
 								justifyContent: "center",
 								alignItems: "center",
 								borderRadius: 10,
+								flex: 1,
 							}}
 						>
-							<item.icon color={"#00a652"} />
+							<item.icon color={"#00a652"} size={18} />
 						</View>
-						<Text style={{ maxWidth: 80, textAlign: "center" }}>
+						<Text style={{ maxWidth: 80, textAlign: "center", fontSize: 12 }}>
 							{item.label}
 						</Text>
 					</View>

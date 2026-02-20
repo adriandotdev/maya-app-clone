@@ -36,20 +36,24 @@ export default function Transactions() {
 						}}
 					>
 						<View>
-							<Text style={{ color: "#919191" }}>{transaction.descripton}</Text>
-							<Text style={{ fontWeight: 500, fontSize: 16 }}>
+							<Text style={{ color: "#919191", fontSize: 12 }}>
+								{transaction.descripton}
+							</Text>
+							<Text style={{ fontWeight: 500, fontSize: 14 }}>
 								{transaction.entity}
 							</Text>
 						</View>
 						<View>
-							<Text style={{ textAlign: "right", color: "#919191" }}>
+							<Text
+								style={{ textAlign: "right", color: "#919191", fontSize: 12 }}
+							>
 								{transaction.time}
 							</Text>
 							<Text
 								style={{
 									textAlign: "right",
 									fontWeight: 500,
-									fontSize: 16,
+									fontSize: 14,
 									color: transaction.type === "receiving" ? "#00a652" : "black",
 								}}
 							>
