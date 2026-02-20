@@ -10,8 +10,9 @@ export default function Footer() {
 			</Text>
 			<Text style={{ textAlign: "center", color: "#706e6e" }}>
 				Visit our <Text style={{ color: "#00a652" }}>Help Center</Text> or call
-				us at <Text style={{ color: "#00a652" }}>+123 4567 8910</Text> for any
-				concerns
+				us at{" "}
+				<Text style={{ color: "#00a652", lineHeight: 20 }}>+123 4567 8910</Text>{" "}
+				for any concerns
 			</Text>
 		</View>
 	);
