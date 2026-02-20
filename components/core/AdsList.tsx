@@ -2,6 +2,10 @@ import { Image } from "expo-image";
 import { ScrollView, View } from "react-native";
 
 export default function AdsList() {
+	const images = [
+		require("../../assets/images/carousel/carousel1.png"),
+		require("../../assets/images/carousel/carousel2.png"),
+	];
 	return (
 		<ScrollView
 			horizontal
@@ -9,9 +13,11 @@ export default function AdsList() {
 			contentContainerStyle={{
 				gap: 8,
 				marginTop: 16,
+				minHeight: 102,
+				paddingHorizontal: 4,
 			}}
 		>
-			{[1, 2, 3, 4].map((index) => (
+			{images.map((url, index) => (
 				<View
 					key={index}
 					style={{
@@ -20,10 +26,14 @@ export default function AdsList() {
 						borderRadius: 16,
 						marginRight: 10,
 						backgroundColor: "gray",
+						shadowColor: "#000",
+						shadowOffset: { width: 0, height: 1 },
+						shadowOpacity: 0.25,
+						shadowRadius: 0.84,
 					}}
 				>
 					<Image
-						source={require("../../assets/images/carousel/image1.jpg")}
+						source={url}
 						style={{ width: 350, height: 100, borderRadius: 16 }}
 						contentFit="cover"
 						contentPosition="top center"
