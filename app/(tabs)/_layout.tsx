@@ -23,6 +23,12 @@ export default function TabLayout() {
 						tabBarStyle: { display: "none" },
 					}}
 				/>
+				<Tabs.Screen
+					name="credit"
+					options={{
+						tabBarStyle: { display: "none" },
+					}}
+				/>
 			</Tabs>
 
 			<FloatingNav />

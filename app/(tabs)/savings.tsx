@@ -1,8 +1,9 @@
+import NonWalletFooter from "@/components/core/NonWalletFooter";
 import OpenAccountSection from "@/components/core/OpenAccountSection";
 import SavingsApplicationSection from "@/components/core/SavingsApplicationSection";
 import SavingsBalance from "@/components/core/SavingsBalance";
 import SavingsSummary from "@/components/core/SavingsSummary";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet } from "react-native";
 export default function Savings() {
 	return (
 		<>
@@ -16,54 +17,7 @@ export default function Savings() {
 				{/* @TODO: Add card background to left side */}
 				<SavingsApplicationSection />
 
-				<View style={styles.container}>
-					<View
-						style={{
-							display: "flex",
-							flexDirection: "row",
-							alignItems: "center",
-							gap: 4,
-						}}
-					>
-						<Text style={styles.footerTitle}>yawa</Text>
-						<View
-							style={{
-								backgroundColor: "#00a652",
-								padding: 4,
-								borderTopRightRadius: 12,
-								borderBottomRightRadius: 12,
-								borderBottomLeftRadius: 12,
-							}}
-						>
-							<Text
-								style={{
-									textAlign: "center",
-									color: "white",
-									fontWeight: "600",
-								}}
-							>
-								BANK
-							</Text>
-						</View>
-					</View>
-					<Text style={{ textAlign: "center", color: "#706e6e" }}>
-						Yawa Savings is powered by Yawa Bank, Inc.
-					</Text>
-					<Text
-						style={{ textAlign: "center", color: "#706e6e", lineHeight: 20 }}
-					>
-						Deposits are insured by PDIC up to 1,000,000 per depositor. Yawa
-						Bank, Inc. is regulated by the Bangko Sentral ng Pilipinas. Learn
-						more at <Text style={{ color: "#00a652" }}>www.bsp.gov.ph</Text>
-					</Text>
-					<Text
-						style={{ textAlign: "center", color: "#706e6e", lineHeight: 20 }}
-					>
-						Visit our <Text style={{ color: "#00a652" }}>Help Center</Text> or
-						call us at <Text style={{ color: "#00a652" }}>+123 4567 8910</Text>{" "}
-						for any concerns
-					</Text>
-				</View>
+				<NonWalletFooter />
 			</ScrollView>
 		</>
 	);
