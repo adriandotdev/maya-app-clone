@@ -1,3 +1,4 @@
+import { Image } from "expo-image";
 import { ChevronRight } from "lucide-react-native";
 import { Text, View } from "react-native";
 
@@ -13,8 +14,21 @@ export default function SavingsApplicationSection() {
 				alignItems: "center",
 				padding: 24,
 				gap: 4,
+				position: "relative",
+				overflow: "hidden",
 			}}
 		>
+			<Image
+				source={require("../../assets/images/carousel/card.png")}
+				style={{
+					width: 150,
+					height: 150,
+					borderRadius: 16,
+					position: "absolute",
+					left: -60,
+					top: 10,
+				}}
+			/>
 			<View
 				style={{
 					display: "flex",

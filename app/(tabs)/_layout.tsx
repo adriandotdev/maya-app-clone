@@ -10,7 +10,7 @@ export default function TabLayout() {
 	return (
 		<SafeAreaView style={{ flex: 1, position: "relative", paddingBottom: 56 }}>
 			<Header selectedItem={selectedItem} setSelectedItem={setSelectedItem} />
-			<Tabs screenOptions={{ headerShown: false }}>
+			<Tabs screenOptions={{ headerShown: false, animation: "shift" }}>
 				<Tabs.Screen
 					name="home"
 					options={{

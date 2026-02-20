@@ -29,7 +29,7 @@ export default function SavingsBalance() {
 					}}
 				>
 					<View>
-						<Text style={styles.walletBalance}>{formatToCurrency(85000)}</Text>
+						<Text style={styles.walletBalance}>{formatToCurrency(105000)}</Text>
 
 						<Text style={{ color: "#5f5c5c", fontWeight: 500 }}>
 							Total savings
