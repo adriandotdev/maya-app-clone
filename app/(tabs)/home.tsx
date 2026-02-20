@@ -4,12 +4,9 @@ import Footer from "@/components/core/Footer";
 import Rewards from "@/components/core/Rewards";
 import Transactions from "@/components/core/Transactions";
 import WalletBalance from "@/components/core/WalletBalance";
-import { useState } from "react";
 import { ScrollView, StyleSheet } from "react-native";
 
 export default function Home() {
-	const [selectedItem, setSelectedItem] = useState("Wallet");
-
 	return (
 		<>
 			{/* CONTENT */}

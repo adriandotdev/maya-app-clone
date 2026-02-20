@@ -1,5 +1,14 @@
 import { Transaction } from "@/utils/types";
-import { Landmark, PartyPopper } from "lucide-react-native";
+import {
+	CardSim,
+	Ellipsis,
+	Gem,
+	HeartHandshake,
+	Landmark,
+	PhilippinePeso,
+	ReceiptText,
+	ScanEye,
+} from "lucide-react-native";
 
 export const headerItems = [
 	{
@@ -30,32 +39,32 @@ export const appListItems = [
 		label: "Bank Transfer",
 	},
 	{
-		icon: PartyPopper,
-		label: "Raffle",
+		icon: PhilippinePeso,
+		label: "Raffle Promo",
 	},
 	{
-		icon: Landmark,
+		icon: Gem,
 		label: "Crypto",
 	},
 	{
-		icon: PartyPopper,
+		icon: HeartHandshake,
 		label: "Refer & Earn",
 	},
 	{
-		icon: Landmark,
-		label: "Bank Transfer",
+		icon: CardSim,
+		label: "Load",
 	},
 	{
-		icon: PartyPopper,
-		label: "Raffle",
+		icon: ReceiptText,
+		label: "Bills",
 	},
 	{
-		icon: Landmark,
-		label: "Crypto",
+		icon: ScanEye,
+		label: "PBB",
 	},
 	{
-		icon: PartyPopper,
-		label: "Refer & Earn",
+		icon: Ellipsis,
+		label: "More",
 	},
 ];
 

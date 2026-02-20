@@ -33,7 +33,7 @@ export default function AppItems() {
 								borderRadius: 10,
 							}}
 						>
-							<item.icon />
+							<item.icon color={"#00a652"} />
 						</View>
 						<Text style={{ maxWidth: 80, textAlign: "center" }}>
 							{item.label}
@@ -71,7 +71,7 @@ export default function AppItems() {
 								borderRadius: 10,
 							}}
 						>
-							<item.icon />
+							<item.icon color={"#00a652"} />
 						</View>
 						<Text style={{ maxWidth: 80, textAlign: "center" }}>
 							{item.label}
