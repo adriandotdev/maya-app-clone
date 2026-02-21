@@ -180,7 +180,7 @@ const styles = StyleSheet.create({
 	},
 	loginText: {
 		color: "white",
-		fontWeight: "bold",
+		fontWeight: "black",
 		fontSize: 16,
 	},
 });

@@ -132,7 +132,6 @@ export default function Cards() {
 					>
 						<View
 							style={{
-								backgroundColor: "black",
 								height: 100,
 								borderRadius: 12,
 								width: "100%",
@@ -152,7 +151,6 @@ export default function Cards() {
 					>
 						<View
 							style={{
-								backgroundColor: "purple",
 								height: 100,
 								borderRadius: 12,
 								width: "100%",

@@ -1,8 +1,8 @@
-import NonWalletFooter from "@/components/core/NonWalletFooter";
-import OpenAccountSection from "@/components/core/OpenAccountSection";
-import SavingsApplicationSection from "@/components/core/SavingsApplicationSection";
-import SavingsBalance from "@/components/core/SavingsBalance";
-import SavingsSummary from "@/components/core/SavingsSummary";
+import NonWalletFooter from "@/components/savings/NonWalletFooter";
+import OpenAccountSection from "@/components/savings/OpenAccountSection";
+import SavingsApplicationSection from "@/components/savings/SavingsApplicationSection";
+import SavingsBalance from "@/components/savings/SavingsBalance";
+import SavingsSummary from "@/components/savings/SavingsSummary";
 import { ScrollView, StyleSheet } from "react-native";
 export default function Savings() {
 	return (

@@ -1,7 +1,7 @@
 import CreditAccountSummary from "@/components/core/CreditAccountSummary";
 import CreditBalance from "@/components/core/CreditBalance";
 import CreditOutstandingBalance from "@/components/core/CreditOutstandingBalance";
-import NonWalletFooter from "@/components/core/NonWalletFooter";
+import NonWalletFooter from "@/components/savings/NonWalletFooter";
 import Transactions from "@/components/wallet/Transactions";
 import { ScrollView, StyleSheet } from "react-native";
 

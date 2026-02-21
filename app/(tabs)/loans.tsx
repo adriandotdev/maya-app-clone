@@ -1,4 +1,4 @@
-import NonWalletFooter from "@/components/core/NonWalletFooter";
+import NonWalletFooter from "@/components/savings/NonWalletFooter";
 import { formatToCurrency } from "@/utils/formatter";
 import {
 	AlertCircle,
