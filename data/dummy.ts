@@ -105,3 +105,5 @@ export const transactions: Transaction[] = [
 		type: "receiving",
 	},
 ];
+
+export const tabs: string[] = ["wallet", "savings", "credit", "loans", "cards"];

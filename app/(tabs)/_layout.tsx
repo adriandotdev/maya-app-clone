@@ -1,5 +1,6 @@
 import FloatingNav from "@/components/core/FloatingNav";
 import Header from "@/components/core/Header";
+import { tabs } from "@/data/dummy";
 import { Tabs } from "expo-router";
 import { useState } from "react";
 import { Platform } from "react-native";
@@ -18,24 +19,15 @@ export default function TabLayout() {
 		>
 			<Header selectedItem={selectedItem} setSelectedItem={setSelectedItem} />
 			<Tabs screenOptions={{ headerShown: false, animation: "shift" }}>
-				<Tabs.Screen
-					name="home"
-					options={{
-						tabBarStyle: { display: "none" }, // hide tab bar on home
-					}}
-				/>
-				<Tabs.Screen
-					name="savings"
-					options={{
-						tabBarStyle: { display: "none" },
-					}}
-				/>
-				<Tabs.Screen
-					name="credit"
-					options={{
-						tabBarStyle: { display: "none" },
-					}}
-				/>
+				{tabs.map((tab, index) => (
+					<Tabs.Screen
+						key={index}
+						name={tab}
+						options={{
+							tabBarStyle: { display: "none" },
+						}}
+					/>
+				))}
 			</Tabs>
 
 			<FloatingNav />
