@@ -8,7 +8,10 @@ import {
 	TouchableWithoutFeedback,
 	View,
 } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import {
+	SafeAreaView,
+	useSafeAreaInsets,
+} from "react-native-safe-area-context";
 
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
@@ -16,7 +19,7 @@ import { useState } from "react";
 
 export default function Login() {
 	const [secure, setSecure] = useState(true);
-
+	const { bottom } = useSafeAreaInsets();
 	const route = useRouter();
 
 	const handleLogin = () => {
@@ -128,7 +131,10 @@ export default function Login() {
 							</Text>
 						</View>
 
-						<Pressable onPress={handleLogin} style={styles.loginButton}>
+						<Pressable
+							onPress={handleLogin}
+							style={[styles.loginButton, { marginBottom: bottom }]}
+						>
 							<Text style={styles.loginText}>Log in</Text>
 						</Pressable>
 					</View>
