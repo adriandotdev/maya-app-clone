@@ -8,7 +8,7 @@ export default function Footer() {
 				style={{
 					textAlign: "center",
 					color: "#706e6e",
-					fontFamily: "Poppins_500Medium",
+					fontFamily: "Poppins_400Regular",
 				}}
 			>
 				Yawa Philippines, Inc. is regulated by the Bangko Sentral ng Pilipinas -{" "}
@@ -18,7 +18,7 @@ export default function Footer() {
 				style={{
 					textAlign: "center",
 					color: "#706e6e",
-					fontFamily: "Poppins_500Medium",
+					fontFamily: "Poppins_400Regular",
 				}}
 			>
 				Visit our <Text style={{ color: "#00a652" }}>Help Center</Text> or call

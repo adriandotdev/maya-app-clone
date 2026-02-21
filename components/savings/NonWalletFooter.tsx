@@ -37,17 +37,37 @@ export default function NonWalletFooter({
 					</Text>
 				</View>
 			</View>
-			<Text style={{ textAlign: "center", color: "#706e6e" }}>
+			<Text
+				style={{
+					textAlign: "center",
+					color: "#706e6e",
+					fontFamily: "Poppins_400Regular",
+				}}
+			>
 				Yawa Savings is powered by Yawa Bank, Inc.
 			</Text>
 			{!hidePDICNotice && (
-				<Text style={{ textAlign: "center", color: "#706e6e", lineHeight: 20 }}>
+				<Text
+					style={{
+						textAlign: "center",
+						color: "#706e6e",
+						lineHeight: 20,
+						fontFamily: "Poppins_400Regular",
+					}}
+				>
 					Deposits are insured by PDIC up to 1,000,000 per depositor. Yawa Bank,
 					Inc. is regulated by the Bangko Sentral ng Pilipinas. Learn more at{" "}
 					<Text style={{ color: "#00a652" }}>www.bsp.gov.ph</Text>
 				</Text>
 			)}
-			<Text style={{ textAlign: "center", color: "#706e6e", lineHeight: 20 }}>
+			<Text
+				style={{
+					textAlign: "center",
+					color: "#706e6e",
+					lineHeight: 20,
+					fontFamily: "Poppins_400Regular",
+				}}
+			>
 				Visit our <Text style={{ color: "#00a652" }}>Help Center</Text> or call
 				us at <Text style={{ color: "#00a652" }}>+123 4567 8910</Text> for any
 				concerns
@@ -69,7 +89,7 @@ const styles = StyleSheet.create({
 	},
 	footerTitle: {
 		fontSize: 24,
-		fontWeight: 700,
+		fontFamily: "Poppins_700Bold",
 		color: "#00a652",
 	},
 });

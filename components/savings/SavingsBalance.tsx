@@ -31,7 +31,7 @@ export default function SavingsBalance() {
 					<View>
 						<Text style={styles.walletBalance}>{formatToCurrency(105000)}</Text>
 
-						<Text style={{ color: "#5f5c5c", fontWeight: 500 }}>
+						<Text style={{ color: "#5f5c5c", fontFamily: "Poppins_500Medium" }}>
 							Total savings
 						</Text>
 					</View>
@@ -62,7 +62,9 @@ export default function SavingsBalance() {
 					}}
 				>
 					<ArrowDownLeft color={"#00a652"} />
-					<Text style={{ color: "#00a652", fontWeight: 600 }}>Deposit</Text>
+					<Text style={{ color: "#00a652", fontFamily: "Poppins_600SemiBold" }}>
+						Deposit
+					</Text>
 				</Pressable>
 				<Pressable
 					style={{
@@ -78,7 +80,9 @@ export default function SavingsBalance() {
 					}}
 				>
 					<ArrowUpRight color={"#00a652"} />
-					<Text style={{ color: "#00a652", fontWeight: 600 }}>Transfer</Text>
+					<Text style={{ color: "#00a652", fontFamily: "Poppins_600SemiBold" }}>
+						Transfer
+					</Text>
 				</Pressable>
 			</View>
 		</View>
@@ -87,7 +91,7 @@ export default function SavingsBalance() {
 
 const styles = StyleSheet.create({
 	walletBalance: {
-		fontWeight: 700,
+		fontFamily: "Poppins_600SemiBold",
 		fontSize: 32,
 		marginBottom: 8,
 	},

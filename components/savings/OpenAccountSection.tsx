@@ -13,25 +13,43 @@ export default function OpenAccountSection() {
 			}}
 		>
 			<View style={{ padding: 16 }}>
-				<Text style={{ color: "#777575", fontWeight: 700, fontSize: 12 }}>
+				<Text
+					style={{
+						color: "#777575",
+						fontFamily: "Poppins_700Bold",
+						fontSize: 12,
+					}}
+				>
 					MORE WAYS TO SAVE
 				</Text>
 
 				<View style={{ marginTop: 16, display: "flex", gap: 16 }}>
 					<View style={{ display: "flex", gap: 4 }}>
-						<Text style={{ color: "#ffffff", fontSize: 16, fontWeight: 700 }}>
+						<Text
+							style={{
+								color: "#ffffff",
+								fontSize: 16,
+								fontFamily: "Poppins_600SemiBold",
+							}}
+						>
 							Time Deposit
 						</Text>
-						<Text style={{ color: "#ccc" }}>
+						<Text style={{ color: "#ccc", fontFamily: "Poppins_400Regular" }}>
 							Save for longer and earn up to 6% p.a.
 						</Text>
 					</View>
 
 					<View style={{ display: "flex", gap: 4 }}>
-						<Text style={{ color: "#ffffff", fontSize: 16, fontWeight: 700 }}>
+						<Text
+							style={{
+								color: "#ffffff",
+								fontSize: 16,
+								fontFamily: "Poppins_600SemiBold",
+							}}
+						>
 							Personal Goals
 						</Text>
-						<Text style={{ color: "#ccc" }}>
+						<Text style={{ color: "#ccc", fontFamily: "Poppins_400Regular" }}>
 							Set a short-term goal and earn up to 8% p.a.
 						</Text>
 					</View>

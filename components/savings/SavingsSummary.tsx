@@ -37,7 +37,13 @@ export default function SavingsSummary() {
 							borderRadius: 16,
 						}}
 					>
-						<Text style={{ color: "white", fontWeight: 600, fontSize: 12 }}>
+						<Text
+							style={{
+								color: "white",
+								fontFamily: "Poppins_600SemiBold",
+								fontSize: 12,
+							}}
+						>
 							6.0% p.a.
 						</Text>
 						<Flame size={16} color={"orange"} fill={"yellow"} />
@@ -53,12 +59,24 @@ export default function SavingsSummary() {
 							gap: 4,
 						}}
 					>
-						<Text style={{ fontSize: 18, color: "white", fontWeight: 600 }}>
+						<Text
+							style={{
+								fontSize: 18,
+								color: "white",
+								fontFamily: "Poppins_600SemiBold",
+							}}
+						>
 							My Savings
 						</Text>
 						<ChevronRight color={"white"} />
 					</View>
-					<Text style={{ color: "white", fontWeight: 600, marginTop: 4 }}>
+					<Text
+						style={{
+							color: "white",
+							fontFamily: "Poppins_600SemiBold",
+							marginTop: 4,
+						}}
+					>
 						{formatToCurrency(1500)}
 					</Text>
 				</View>
@@ -82,7 +100,13 @@ export default function SavingsSummary() {
 					paddingTop: 16,
 				}}
 			>
-				<Text style={{ color: "white", fontWeight: 600, fontSize: 12 }}>
+				<Text
+					style={{
+						color: "white",
+						fontFamily: "Poppins_600SemiBold",
+						fontSize: 12,
+					}}
+				>
 					9 days left at 6% p.a.
 				</Text>
 				<View
@@ -93,7 +117,13 @@ export default function SavingsSummary() {
 						alignItems: "center",
 					}}
 				>
-					<Text style={{ color: "white", fontSize: 12, fontWeight: 600 }}>
+					<Text
+						style={{
+							color: "white",
+							fontSize: 12,
+							fontFamily: "Poppins_600SemiBold",
+						}}
+					>
 						Boost more
 					</Text>
 					<ChevronRight size={16} color={"white"} />

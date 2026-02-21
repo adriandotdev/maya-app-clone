@@ -25,7 +25,7 @@ export default function SavingsApplicationSection() {
 					height: 150,
 					borderRadius: 16,
 					position: "absolute",
-					left: -60,
+					left: -70,
 					top: 10,
 				}}
 			/>
@@ -35,10 +35,22 @@ export default function SavingsApplicationSection() {
 					gap: 4,
 				}}
 			>
-				<Text style={{ fontWeight: "bold", fontSize: 20, color: "white" }}>
+				<Text
+					style={{
+						fontFamily: "Poppins_700Bold",
+						fontSize: 20,
+						color: "white",
+					}}
+				>
 					Ready to start your
 				</Text>
-				<Text style={{ fontWeight: "bold", fontSize: 20, color: "white" }}>
+				<Text
+					style={{
+						fontFamily: "Poppins_700Bold",
+						fontSize: 20,
+						color: "white",
+					}}
+				>
 					Yawa Black journey?
 				</Text>
 				<View
@@ -49,7 +61,9 @@ export default function SavingsApplicationSection() {
 						gap: 3,
 					}}
 				>
-					<Text style={{ color: "#ccc" }}>Apply now</Text>
+					<Text style={{ color: "#ccc", fontFamily: "Poppins_500Medium" }}>
+						Apply now
+					</Text>
 					<ChevronRight size={14} color={"#ccc"} />
 				</View>
 			</View>
