@@ -13,7 +13,7 @@ import {
 export const headerItems = [
 	{
 		label: "Wallet",
-		href: "/home",
+		href: "/wallet",
 	},
 	{
 		label: "Savings",

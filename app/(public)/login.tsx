@@ -23,7 +23,7 @@ export default function Login() {
 	const route = useRouter();
 
 	const handleLogin = () => {
-		route.push("/home");
+		route.push("/wallet");
 	};
 
 	return (
