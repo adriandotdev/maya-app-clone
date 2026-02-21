@@ -58,13 +58,13 @@ export default function Header(props: HeaderProps) {
 							alignItems: "center",
 							width: selectedItem === item.label ? 90 : 70,
 							borderRadius: 15,
-							paddingVertical: 8,
+							paddingVertical: 5,
 						}}
 					>
 						<Text
 							style={{
 								color: selectedItem === item.label ? "white" : "#919191",
-								fontWeight: "bold",
+								fontFamily: "Poppins_600SemiBold",
 							}}
 						>
 							{item.label}
