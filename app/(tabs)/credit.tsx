@@ -2,7 +2,7 @@ import CreditAccountSummary from "@/components/core/CreditAccountSummary";
 import CreditBalance from "@/components/core/CreditBalance";
 import CreditOutstandingBalance from "@/components/core/CreditOutstandingBalance";
 import NonWalletFooter from "@/components/core/NonWalletFooter";
-import Transactions from "@/components/core/Transactions";
+import Transactions from "@/components/wallet/Transactions";
 import { ScrollView, StyleSheet } from "react-native";
 
 export default function Credit() {

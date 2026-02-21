@@ -1,9 +1,9 @@
-import AdsList from "@/components/core/AdsList";
-import AppItems from "@/components/core/AppItems";
-import Footer from "@/components/core/Footer";
-import Rewards from "@/components/core/Rewards";
-import Transactions from "@/components/core/Transactions";
-import WalletBalance from "@/components/core/WalletBalance";
+import AdsList from "@/components/wallet/AdsList";
+import AppItems from "@/components/wallet/AppItems";
+import Footer from "@/components/wallet/Footer";
+import Rewards from "@/components/wallet/Rewards";
+import Transactions from "@/components/wallet/Transactions";
+import WalletBalance from "@/components/wallet/WalletBalance";
 import { ScrollView, StyleSheet } from "react-native";
 
 export default function Home() {
