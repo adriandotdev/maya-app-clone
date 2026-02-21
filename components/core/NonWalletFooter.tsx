@@ -1,6 +1,10 @@
 import { StyleSheet, Text, View } from "react-native";
 
-export default function NonWalletFooter() {
+export default function NonWalletFooter({
+	hidePDICNotice,
+}: {
+	hidePDICNotice?: boolean;
+}) {
 	return (
 		<View style={styles.container}>
 			<View
@@ -36,11 +40,13 @@ export default function NonWalletFooter() {
 			<Text style={{ textAlign: "center", color: "#706e6e" }}>
 				Yawa Savings is powered by Yawa Bank, Inc.
 			</Text>
-			<Text style={{ textAlign: "center", color: "#706e6e", lineHeight: 20 }}>
-				Deposits are insured by PDIC up to 1,000,000 per depositor. Yawa Bank,
-				Inc. is regulated by the Bangko Sentral ng Pilipinas. Learn more at{" "}
-				<Text style={{ color: "#00a652" }}>www.bsp.gov.ph</Text>
-			</Text>
+			{!hidePDICNotice && (
+				<Text style={{ textAlign: "center", color: "#706e6e", lineHeight: 20 }}>
+					Deposits are insured by PDIC up to 1,000,000 per depositor. Yawa Bank,
+					Inc. is regulated by the Bangko Sentral ng Pilipinas. Learn more at{" "}
+					<Text style={{ color: "#00a652" }}>www.bsp.gov.ph</Text>
+				</Text>
+			)}
 			<Text style={{ textAlign: "center", color: "#706e6e", lineHeight: 20 }}>
 				Visit our <Text style={{ color: "#00a652" }}>Help Center</Text> or call
 				us at <Text style={{ color: "#00a652" }}>+123 4567 8910</Text> for any

@@ -16,7 +16,7 @@ export default function Credit() {
 
 			<CreditAccountSummary />
 
-			<NonWalletFooter />
+			<NonWalletFooter hidePDICNotice />
 		</ScrollView>
 	);
 }
