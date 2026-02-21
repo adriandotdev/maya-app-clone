@@ -8,27 +8,24 @@ import { ScrollView, StyleSheet } from "react-native";
 
 export default function Home() {
 	return (
-		<>
-			{/* CONTENT */}
-			<ScrollView contentContainerStyle={styles.content}>
-				{/* Wallet Balance Card */}
-				<WalletBalance />
+		<ScrollView contentContainerStyle={styles.content}>
+			{/* Wallet Balance Card */}
+			<WalletBalance />
 
-				{/* App List Items */}
-				<AppItems />
+			{/* App List Items */}
+			<AppItems />
 
-				{/* Ads List */}
-				<AdsList />
+			{/* Ads List */}
+			<AdsList />
 
-				{/* Transaction  */}
-				<Transactions />
+			{/* Transaction  */}
+			<Transactions />
 
-				{/* Rewards and Vouchers section */}
-				<Rewards />
+			{/* Rewards and Vouchers section */}
+			<Rewards />
 
-				<Footer />
-			</ScrollView>
-		</>
+			<Footer />
+		</ScrollView>
 	);
 }
 

@@ -6,20 +6,18 @@ import SavingsSummary from "@/components/core/SavingsSummary";
 import { ScrollView, StyleSheet } from "react-native";
 export default function Savings() {
 	return (
-		<>
-			<ScrollView contentContainerStyle={styles.content}>
-				<SavingsBalance />
+		<ScrollView contentContainerStyle={styles.content}>
+			<SavingsBalance />
 
-				<SavingsSummary />
+			<SavingsSummary />
 
-				<OpenAccountSection />
+			<OpenAccountSection />
 
-				{/* @TODO: Add card background to left side */}
-				<SavingsApplicationSection />
+			{/* @TODO: Add card background to left side */}
+			<SavingsApplicationSection />
 
-				<NonWalletFooter />
-			</ScrollView>
-		</>
+			<NonWalletFooter />
+		</ScrollView>
 	);
 }
 
