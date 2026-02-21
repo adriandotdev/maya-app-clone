@@ -4,11 +4,23 @@ export default function Footer() {
 	return (
 		<View style={styles.container}>
 			<Text style={styles.footerTitle}>yawa</Text>
-			<Text style={{ textAlign: "center", color: "#706e6e" }}>
+			<Text
+				style={{
+					textAlign: "center",
+					color: "#706e6e",
+					fontFamily: "Poppins_500Medium",
+				}}
+			>
 				Yawa Philippines, Inc. is regulated by the Bangko Sentral ng Pilipinas -{" "}
 				<Text style={{ color: "#00a652" }}>bsp.gov.ph</Text>
 			</Text>
-			<Text style={{ textAlign: "center", color: "#706e6e" }}>
+			<Text
+				style={{
+					textAlign: "center",
+					color: "#706e6e",
+					fontFamily: "Poppins_500Medium",
+				}}
+			>
 				Visit our <Text style={{ color: "#00a652" }}>Help Center</Text> or call
 				us at{" "}
 				<Text style={{ color: "#00a652", lineHeight: 20 }}>+123 4567 8910</Text>{" "}
@@ -27,7 +39,7 @@ const styles = StyleSheet.create({
 	},
 	footerTitle: {
 		fontSize: 24,
-		fontWeight: 700,
+		fontFamily: "Poppins_700Bold",
 		color: "#00a652",
 	},
 });

@@ -2,8 +2,10 @@ import { Text, View } from "react-native";
 
 export default function Rewards() {
 	return (
-		<View style={{ padding: 16 }}>
-			<Text style={{ fontWeight: 500, fontSize: 16 }}>Get rewards</Text>
+		<View style={{ paddingVertical: 16 }}>
+			<Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 16 }}>
+				Get rewards
+			</Text>
 
 			<View
 				style={{
@@ -23,10 +25,22 @@ export default function Rewards() {
 						gap: 4,
 					}}
 				>
-					<Text style={{ fontSize: 16, color: "white", fontWeight: 700 }}>
+					<Text
+						style={{
+							fontSize: 16,
+							color: "white",
+							fontFamily: "Poppins_700Bold",
+						}}
+					>
 						Missions
 					</Text>
-					<Text style={{ fontSize: 12, color: "white", fontWeight: 500 }}>
+					<Text
+						style={{
+							fontSize: 12,
+							color: "white",
+							fontFamily: "Poppins_500Medium",
+						}}
+					>
 						Earn rewards for completing tasks
 					</Text>
 				</View>
@@ -41,10 +55,22 @@ export default function Rewards() {
 						gap: 4,
 					}}
 				>
-					<Text style={{ fontSize: 16, color: "white", fontWeight: 700 }}>
+					<Text
+						style={{
+							fontSize: 16,
+							color: "white",
+							fontFamily: "Poppins_700Bold",
+						}}
+					>
 						Vouchers
 					</Text>
-					<Text style={{ fontSize: 12, color: "white", fontWeight: 500 }}>
+					<Text
+						style={{
+							fontSize: 12,
+							color: "white",
+							fontFamily: "Poppins_500Medium",
+						}}
+					>
 						{"Go claim them before they're gone"}
 					</Text>
 				</View>

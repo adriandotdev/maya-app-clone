@@ -9,10 +9,12 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 
 export default function WalletBalance() {
 	return (
-		<View style={{ height: 220, backgroundColor: "#ebeeef", borderRadius: 16 }}>
+		<View
+			style={{ minHeight: 210, backgroundColor: "#ebeeef", borderRadius: 16 }}
+		>
 			<View
 				style={{
-					height: 150,
+					minHeight: 150,
 					backgroundColor: "white",
 					borderRadius: 16,
 					paddingHorizontal: 16,
@@ -29,10 +31,20 @@ export default function WalletBalance() {
 					<View>
 						<Text style={styles.walletBalance}>{formatToCurrency(76000)}</Text>
 						<View style={{ display: "flex", flexDirection: "row", gap: 8 }}>
-							<Text style={{ color: "#5f5c5c", fontWeight: 500 }}>
+							<Text
+								style={{
+									color: "#5f5c5c",
+									fontFamily: "Poppins_500Medium",
+								}}
+							>
 								Wallet balance
 							</Text>
-							<Text style={{ color: "#00a652", fontWeight: 500 }}>
+							<Text
+								style={{
+									color: "#00a652",
+									fontFamily: "Poppins_500Medium",
+								}}
+							>
 								Auto cash in
 							</Text>
 						</View>
@@ -63,7 +75,11 @@ export default function WalletBalance() {
 						}}
 					>
 						<ArrowDownLeft color={"#00a652"} />
-						<Text style={{ color: "#00a652", fontWeight: 600 }}>Cash in</Text>
+						<Text
+							style={{ color: "#00a652", fontFamily: "Poppins_600SemiBold" }}
+						>
+							Cash in
+						</Text>
 					</Pressable>
 					<Pressable
 						style={{
@@ -79,7 +95,11 @@ export default function WalletBalance() {
 						}}
 					>
 						<ArrowUpRight color={"#00a652"} />
-						<Text style={{ color: "#00a652", fontWeight: 600 }}>Send</Text>
+						<Text
+							style={{ color: "#00a652", fontFamily: "Poppins_600SemiBold" }}
+						>
+							Send
+						</Text>
 					</Pressable>
 				</View>
 			</View>
@@ -101,17 +121,29 @@ export default function WalletBalance() {
 							alignItems: "center",
 						}}
 					>
-						<Text style={{ fontSize: 18, fontWeight: 600 }}>Easy Credit</Text>
+						<Text style={{ fontSize: 16, fontFamily: "Poppins_600SemiBold" }}>
+							Easy Credit
+						</Text>
 						<ChevronRight />
 					</View>
-					<Text style={{ color: "#919191" }}>Borrow instantly</Text>
+					<Text style={{ color: "#919191", fontFamily: "Poppins_500Medium" }}>
+						Borrow instantly
+					</Text>
 				</View>
 
 				<View>
-					<Text style={{ textAlign: "right", fontSize: 18, fontWeight: 500 }}>
+					<Text
+						style={{
+							textAlign: "right",
+							fontSize: 16,
+							fontFamily: "Poppins_600SemiBold",
+						}}
+					>
 						0.00
 					</Text>
-					<Text style={{ color: "#919191" }}>Available credit</Text>
+					<Text style={{ color: "#919191", fontFamily: "Poppins_500Medium" }}>
+						Available credit
+					</Text>
 				</View>
 			</Pressable>
 		</View>
@@ -120,7 +152,7 @@ export default function WalletBalance() {
 
 const styles = StyleSheet.create({
 	walletBalance: {
-		fontWeight: 700,
+		fontFamily: "Poppins_600SemiBold",
 		fontSize: 32,
 	},
 });

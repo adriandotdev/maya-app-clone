@@ -74,7 +74,7 @@ export default function Login() {
 										top: 8,
 										left: 20,
 										fontSize: 12,
-										fontFamily: "NunitoSans_600SemiBold",
+										fontFamily: "Poppins_500Medium",
 									}}
 								>
 									Password
@@ -98,8 +98,7 @@ export default function Login() {
 							<Text
 								style={{
 									color: "#00a652",
-									fontFamily: "NunitoSans_600SemiBold",
-									fontSize: 16,
+									fontFamily: "Poppins_600SemiBold",
 								}}
 							>
 								Forgot your password?
@@ -127,22 +126,19 @@ export default function Login() {
 							}}
 						>
 							<Smartphone size={18} />
-							<Text style={{ fontFamily: "NunitoSans_600SemiBold" }}>
+							<Text style={{ fontFamily: "Poppins_600SemiBold" }}>
 								Log in with screen lock
 							</Text>
 						</View>
 
 						<View style={{ display: "flex", flexDirection: "row", gap: 8 }}>
-							<Text
-								style={{ fontFamily: "NunitoSans_600SemiBold", fontSize: 16 }}
-							>
+							<Text style={{ fontFamily: "Poppins_600SemiBold" }}>
 								Not you?
 							</Text>
 							<Text
 								style={{
-									fontFamily: "NunitoSans_600SemiBold",
+									fontFamily: "Poppins_600SemiBold",
 									color: "#00a652",
-									fontSize: 16,
 								}}
 							>
 								Switch account
@@ -166,11 +162,11 @@ const styles = StyleSheet.create({
 	title: {
 		fontSize: 48,
 		color: "#00a652",
-		fontFamily: "NunitoSans_600SemiBold",
+		fontFamily: "Poppins_600SemiBold",
 	},
 	mobileNumber: {
 		fontSize: 24,
-		fontFamily: "NunitoSans_500Medium",
+		fontFamily: "Poppins_600SemiBold",
 	},
 	numberContainer: {
 		display: "flex",
@@ -186,7 +182,7 @@ const styles = StyleSheet.create({
 		paddingBottom: 12,
 		paddingTop: 28,
 		borderRadius: 16,
-		fontFamily: "NunitoSans_500Medium",
+		fontFamily: "Poppins_500Medium",
 	},
 	loginButton: {
 		backgroundColor: "#00a652",
@@ -200,10 +196,9 @@ const styles = StyleSheet.create({
 	},
 	loginText: {
 		color: "white",
-		fontFamily: "NunitoSans_700Bold",
-		fontSize: 16,
+		fontFamily: "Poppins_700Bold",
 	},
 	accountName: {
-		fontFamily: "NunitoSans_500Medium",
+		fontFamily: "Poppins_500Medium",
 	},
 });

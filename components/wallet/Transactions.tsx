@@ -20,8 +20,10 @@ export default function Transactions() {
 					alignItems: "flex-end",
 				}}
 			>
-				<Text style={{ fontSize: 16, fontWeight: 600 }}>Transactions</Text>
-				<Text style={{ fontWeight: 600, color: "#00a652" }}>See all</Text>
+				<Text style={{ fontFamily: "Poppins_600SemiBold" }}>Transactions</Text>
+				<Text style={{ color: "#00a652", fontFamily: "Poppins_600SemiBold" }}>
+					See all
+				</Text>
 			</View>
 
 			{/* Transaction Items */}
@@ -36,23 +38,34 @@ export default function Transactions() {
 						}}
 					>
 						<View>
-							<Text style={{ color: "#919191", fontSize: 12 }}>
+							<Text
+								style={{
+									color: "#919191",
+									fontSize: 12,
+									fontFamily: "Poppins_400Regular",
+								}}
+							>
 								{transaction.descripton}
 							</Text>
-							<Text style={{ fontWeight: 500, fontSize: 14 }}>
+							<Text style={{ fontFamily: "Poppins_600SemiBold" }}>
 								{transaction.entity}
 							</Text>
 						</View>
 						<View>
 							<Text
-								style={{ textAlign: "right", color: "#919191", fontSize: 12 }}
+								style={{
+									textAlign: "right",
+									color: "#919191",
+									fontSize: 12,
+									fontFamily: "Poppins_400Regular",
+								}}
 							>
 								{transaction.time}
 							</Text>
 							<Text
 								style={{
 									textAlign: "right",
-									fontWeight: 500,
+									fontFamily: "Poppins_600SemiBold",
 									fontSize: 14,
 									color: transaction.type === "receiving" ? "#00a652" : "black",
 								}}
