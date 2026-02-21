@@ -64,7 +64,6 @@ export default function Login() {
 								<TextInput
 									style={styles.mobileInput}
 									placeholder="Enter password"
-									keyboardType="visible-password"
 									secureTextEntry={secure}
 								/>
 
