@@ -3,6 +3,7 @@ import { formatToCurrency } from "@/utils/formatter";
 import {
 	AlertCircle,
 	ChevronRight,
+	Dot,
 	GraduationCap,
 	ReceiptText,
 	User,
@@ -20,20 +21,55 @@ export default function Loans() {
 					alignItems: "center",
 				}}
 			>
-				<Text style={{ fontWeight: 600, fontSize: 16 }}>Personal Loan</Text>
+				<Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 16 }}>
+					Personal Loan
+				</Text>
 				<ChevronRight color={"#00a652"} size={16} />
 			</View>
 
-			<View style={{ marginTop: 8, gap: 4 }}>
-				<Text style={{ color: "#5f5c5c", fontSize: 12 }}>
+			<View
+				style={{
+					marginTop: 8,
+					gap: 4,
+				}}
+			>
+				<Text
+					style={{
+						color: "#5f5c5c",
+						fontSize: 12,
+						fontFamily: "Poppins_400Regular",
+					}}
+				>
 					Borrow larger amounts over a longer period
 				</Text>
 
-				<View style={{ display: "flex", flexDirection: "row", gap: 8 }}>
-					<Text style={{ color: "#5f5c5c", fontSize: 12 }}>
+				<View
+					style={{
+						display: "flex",
+						flexDirection: "row",
+
+						alignItems: "center",
+					}}
+				>
+					<Text
+						style={{
+							color: "#5f5c5c",
+							fontSize: 12,
+							fontFamily: "Poppins_400Regular",
+						}}
+					>
 						{formatToCurrency(1500)} remaining
 					</Text>
-					<Text style={{ color: "#5f5c5c", fontSize: 12 }}>3 terms paid</Text>
+					<Dot />
+					<Text
+						style={{
+							color: "#5f5c5c",
+							fontSize: 12,
+							fontFamily: "Poppins_400Regular",
+						}}
+					>
+						3 terms paid
+					</Text>
 				</View>
 			</View>
 
@@ -52,7 +88,9 @@ export default function Loans() {
 					borderColor: "#e7e7e7",
 				}}
 			>
-				<Text style={{ fontWeight: 500, fontSize: 12 }}>Next payment</Text>
+				<Text style={{ fontFamily: "Poppins_500Medium", fontSize: 12 }}>
+					Next payment
+				</Text>
 
 				<View style={{ display: "flex", flexDirection: "row", gap: 8 }}>
 					{/* Amount Due */}
@@ -65,8 +103,18 @@ export default function Loans() {
 							flex: 1,
 						}}
 					>
-						<Text style={{ color: "#5f5c5c", fontSize: 12 }}>Amount due</Text>
-						<Text style={{ fontWeight: 600 }}>{formatToCurrency(500)}</Text>
+						<Text
+							style={{
+								color: "#5f5c5c",
+								fontSize: 12,
+								fontFamily: "Poppins_400Regular",
+							}}
+						>
+							Amount due
+						</Text>
+						<Text style={{ fontFamily: "Poppins_600SemiBold" }}>
+							{formatToCurrency(500)}
+						</Text>
 					</View>
 
 					<View
@@ -78,8 +126,18 @@ export default function Loans() {
 							flex: 1,
 						}}
 					>
-						<Text style={{ color: "#5f5c5c", fontSize: 12 }}>Due date</Text>
-						<Text style={{ fontWeight: 600 }}>Feb, 19, 2024</Text>
+						<Text
+							style={{
+								color: "#5f5c5c",
+								fontSize: 12,
+								fontFamily: "Poppins_400Regular",
+							}}
+						>
+							Due date
+						</Text>
+						<Text style={{ fontFamily: "Poppins_600SemiBold" }}>
+							Feb, 19, 2024
+						</Text>
 					</View>
 				</View>
 
@@ -101,7 +159,7 @@ export default function Loans() {
 						style={{
 							fontSize: 12,
 							color: "#5f5c5c",
-							fontWeight: 500,
+							fontFamily: "Poppins_500Medium",
 							wordWrap: "wrap",
 							marginRight: 12,
 						}}
@@ -120,18 +178,35 @@ export default function Loans() {
 						}}
 					>
 						<Text
-							style={{ textAlign: "center", color: "white", fontWeight: 700 }}
+							style={{
+								textAlign: "center",
+								color: "white",
+								fontFamily: "Poppins_600SemiBold",
+							}}
 						>
 							Pay now
 						</Text>
 					</Pressable>
-					<Text style={{ textAlign: "center", fontSize: 12, color: "#5f5c5c" }}>
+					<Text
+						style={{
+							textAlign: "center",
+							fontSize: 12,
+							color: "#5f5c5c",
+							fontFamily: "Poppins_400Regular",
+						}}
+					>
 						Pay partially or in full anytime👌
 					</Text>
 				</View>
 			</View>
 
-			<Text style={{ marginTop: 32, marginBottom: 16, fontWeight: 600 }}>
+			<Text
+				style={{
+					marginTop: 32,
+					marginBottom: 16,
+					fontFamily: "Poppins_600SemiBold",
+				}}
+			>
 				More actions
 			</Text>
 
@@ -167,7 +242,9 @@ export default function Loans() {
 						}}
 					>
 						<User />
-						<Text>Account summary</Text>
+						<Text style={{ fontFamily: "Poppins_500Medium" }}>
+							Account summary
+						</Text>
 					</View>
 					<ChevronRight />
 				</View>
@@ -195,7 +272,9 @@ export default function Loans() {
 						}}
 					>
 						<ReceiptText />
-						<Text>View closed loans</Text>
+						<Text style={{ fontFamily: "Poppins_500Medium" }}>
+							View closed loans
+						</Text>
 					</View>
 					<ChevronRight />
 				</View>
@@ -222,7 +301,9 @@ export default function Loans() {
 						}}
 					>
 						<GraduationCap />
-						<Text>Learn more about loans</Text>
+						<Text style={{ fontFamily: "Poppins_500Medium" }}>
+							Learn more about loans
+						</Text>
 					</View>
 					<ChevronRight />
 				</View>
