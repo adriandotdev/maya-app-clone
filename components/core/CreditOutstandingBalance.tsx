@@ -23,15 +23,22 @@ export default function CreditOutstandingBalance() {
 					alignItems: "center",
 				}}
 			>
-				<Text style={{ fontSize: 16, fontWeight: 500 }}>
+				<Text style={{ fontSize: 16, fontFamily: "Poppins_500Medium" }}>
 					Outstanding balance
 				</Text>
-				<Text style={{ fontSize: 12, fontWeight: 500 }}>
+				<Text style={{ fontSize: 12, fontFamily: "Poppins_500Medium" }}>
 					{formatToCurrency(5000)}
 				</Text>
 			</View>
 			{/* Description */}
-			<Text style={{ fontSize: 12, color: "#706e6e", maxWidth: 250 }}>
+			<Text
+				style={{
+					fontSize: 12,
+					color: "#706e6e",
+					maxWidth: 250,
+					fontFamily: "Poppins_400Regular",
+				}}
+			>
 				Includes your total unpaid credit plus fees, documentary stamp tax, and
 				any overdue penalties.
 			</Text>
@@ -46,7 +53,11 @@ export default function CreditOutstandingBalance() {
 					}}
 				>
 					<Text
-						style={{ textAlign: "center", fontWeight: 600, color: "white" }}
+						style={{
+							textAlign: "center",
+							fontFamily: "Poppins_600SemiBold",
+							color: "white",
+						}}
 					>
 						Pay now
 					</Text>
@@ -57,6 +68,7 @@ export default function CreditOutstandingBalance() {
 						marginTop: 4,
 						fontSize: 12,
 						color: "#706e6e",
+						fontFamily: "Poppins_400Regular",
 					}}
 				>
 					Pay partially or in full anytime 😉
@@ -90,19 +102,40 @@ export default function CreditOutstandingBalance() {
 							gap: 4,
 						}}
 					>
-						<Text style={{ fontSize: 16, fontWeight: 500 }}>Latest bill</Text>
+						<Text style={{ fontSize: 16, fontFamily: "Poppins_500Medium" }}>
+							Latest bill
+						</Text>
 						<CircleAlert size={16} />
 					</View>
-					<Text style={{ color: "#706e6e", fontSize: 12 }}>
+					<Text
+						style={{
+							color: "#706e6e",
+							fontSize: 12,
+							fontFamily: "Poppins_400Regular",
+						}}
+					>
 						Statement for Jan 2026
 					</Text>
 				</View>
 
 				<View>
-					<Text style={{ fontSize: 16, textAlign: "right", fontWeight: 500 }}>
+					<Text
+						style={{
+							fontSize: 16,
+							textAlign: "right",
+							fontFamily: "Poppins_500Medium",
+						}}
+					>
 						{formatToCurrency(1500)}
 					</Text>
-					<Text style={{ color: "#706e6e", fontSize: 12, textAlign: "right" }}>
+					<Text
+						style={{
+							color: "#706e6e",
+							fontSize: 12,
+							textAlign: "right",
+							fontFamily: "Poppins_400Regular",
+						}}
+					>
 						Due Feb 11, 2026
 					</Text>
 				</View>

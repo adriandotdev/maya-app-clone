@@ -4,7 +4,13 @@ import { Pressable, Text, View } from "react-native";
 export default function CreditAccountSummary() {
 	return (
 		<View style={{ marginTop: 16, gap: 8 }}>
-			<Text style={{ fontSize: 10, fontWeight: 600, color: "#706e6e" }}>
+			<Text
+				style={{
+					fontSize: 10,
+					fontFamily: "Poppins_600SemiBold",
+					color: "#706e6e",
+				}}
+			>
 				MANAGE MY CREDIT
 			</Text>
 
@@ -29,7 +35,9 @@ export default function CreditAccountSummary() {
 					}}
 				>
 					<ReceiptText size={15} />
-					<Text>Account summary</Text>
+					<Text style={{ fontFamily: "Poppins_500Medium" }}>
+						Account summary
+					</Text>
 				</View>
 
 				<ChevronRight size={18} color={"#00a652"} />

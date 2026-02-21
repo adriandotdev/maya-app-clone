@@ -31,7 +31,7 @@ export default function CreditBalance() {
 					<View>
 						<Text style={styles.walletBalance}>{formatToCurrency(85000)}</Text>
 
-						<Text style={{ color: "#5f5c5c", fontWeight: 500 }}>
+						<Text style={{ color: "#5f5c5c", fontFamily: "Poppins_500Medium" }}>
 							Available credit
 						</Text>
 					</View>
@@ -41,7 +41,13 @@ export default function CreditBalance() {
 
 			<View style={{ display: "flex", gap: 4 }}>
 				<View style={{ display: "flex", alignItems: "flex-end" }}>
-					<Text style={{ fontSize: 12, textAlign: "right" }}>
+					<Text
+						style={{
+							fontSize: 12,
+							textAlign: "right",
+							fontFamily: "Poppins_500Medium",
+						}}
+					>
 						{formatToCurrency(85000)}
 					</Text>
 					<ChevronDown size={12} />
@@ -57,8 +63,16 @@ export default function CreditBalance() {
 						justifyContent: "space-between",
 					}}
 				>
-					<Text style={{ fontSize: 12 }}>{formatToCurrency(0)}</Text>
-					<Text style={{ fontSize: 12, textAlign: "right" }}>
+					<Text style={{ fontSize: 12, fontFamily: "Poppins_500Medium" }}>
+						{formatToCurrency(0)}
+					</Text>
+					<Text
+						style={{
+							fontSize: 12,
+							textAlign: "right",
+							fontFamily: "Poppins_500Medium",
+						}}
+					>
 						{formatToCurrency(85000)}
 					</Text>
 				</View>
@@ -72,7 +86,11 @@ export default function CreditBalance() {
 				}}
 			>
 				<Text
-					style={{ color: "#00a652", fontWeight: 500, textAlign: "center" }}
+					style={{
+						color: "#00a652",
+						fontFamily: "Poppins_500Medium",
+						textAlign: "center",
+					}}
 				>
 					Transfer to Wallet
 				</Text>
@@ -83,7 +101,7 @@ export default function CreditBalance() {
 
 const styles = StyleSheet.create({
 	walletBalance: {
-		fontWeight: 700,
+		fontFamily: "Poppins_600SemiBold",
 		fontSize: 32,
 		marginBottom: 8,
 	},
