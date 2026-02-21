@@ -1,15 +1,19 @@
 import { formatToCurrency } from "@/utils/formatter";
 import { Image } from "expo-image";
+import { LinearGradient } from "expo-linear-gradient";
 import { ChevronRight } from "lucide-react-native";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
+
 export default function Cards() {
 	return (
 		<ScrollView contentContainerStyle={styles.content}>
 			<Text style={{ fontWeight: 700, marginBottom: 12 }}>Credit Cards</Text>
 
-			<View
+			<LinearGradient
+				colors={["#a8a8a8", "#e9e9e9", "#a8a8a8"]}
+				start={{ x: 0, y: 0 }} // top
+				end={{ x: 0, y: 1 }} // bottom
 				style={{
-					backgroundColor: "gray",
 					padding: 16,
 					borderRadius: 16,
 					position: "relative",
@@ -44,10 +48,16 @@ export default function Cards() {
 						padding: 6,
 						borderRadius: 16,
 						maxWidth: 100,
-						marginTop: 4,
+						marginTop: 8,
 					}}
 				>
-					<Text style={{ fontSize: 12, color: "white", fontWeight: 700 }}>
+					<Text
+						style={{
+							fontSize: 10,
+							color: "white",
+							fontWeight: 700,
+						}}
+					>
 						Apply now
 					</Text>
 					<ChevronRight color={"white"} size={14} />
@@ -64,7 +74,7 @@ export default function Cards() {
 						transform: "translateY(-50%)",
 					}}
 				/>
-			</View>
+			</LinearGradient>
 
 			<View
 				style={{ display: "flex", flexDirection: "row", gap: 8, marginTop: 16 }}
@@ -72,13 +82,19 @@ export default function Cards() {
 				<View
 					style={{
 						height: 100,
-						maxWidth: "100%",
+						maxWidth: 170,
 						width: "100%",
-						backgroundColor: "gray",
+						// backgroundColor: "gray",
 						flex: 1,
 						borderRadius: 12,
 					}}
-				></View>
+				>
+					<Image
+						source={require("../../assets/images/landers.png")}
+						style={{ width: "100%", height: "100%", borderRadius: 12 }}
+						contentFit="cover"
+					/>
+				</View>
 
 				<View
 					style={{
@@ -121,7 +137,13 @@ export default function Cards() {
 								borderRadius: 12,
 								width: "100%",
 							}}
-						></View>
+						>
+							<Image
+								source={require("../../assets/images/card.png")}
+								style={{ width: "100%", height: "100%", borderRadius: 12 }}
+								contentFit="contain"
+							/>
+						</View>
 						<Text style={{ fontSize: 12, fontWeight: 600 }}>yawausername</Text>
 					</View>
 
@@ -135,7 +157,13 @@ export default function Cards() {
 								borderRadius: 12,
 								width: "100%",
 							}}
-						></View>
+						>
+							<Image
+								source={require("../../assets/images/card2.png")}
+								style={{ width: "100%", height: "100%", borderRadius: 12 }}
+								contentFit="contain"
+							/>
+						</View>
 						<Text style={{ fontSize: 12, fontWeight: 600 }}>yawausername</Text>
 					</View>
 				</View>
@@ -201,14 +229,19 @@ export default function Cards() {
 					>
 						<View
 							style={{
-								backgroundColor: "black",
 								height: 50,
-								borderRadius: 8,
+								borderRadius: 4,
 								flex: 1,
 								width: "50%",
 								maxWidth: 90,
 							}}
-						></View>
+						>
+							<Image
+								source={require("../../assets/images/card.png")}
+								style={{ width: "100%", height: "100%", borderRadius: 4 }}
+								contentFit="contain"
+							/>
+						</View>
 						<View style={{ flex: 1, gap: 4 }}>
 							<View
 								style={{
@@ -239,14 +272,19 @@ export default function Cards() {
 					>
 						<View
 							style={{
-								backgroundColor: "black",
 								height: 50,
-								borderRadius: 8,
+								borderRadius: 4,
 								flex: 1,
 								width: "50%",
 								maxWidth: 90,
 							}}
-						></View>
+						>
+							<Image
+								source={require("../../assets/images/card.png")}
+								style={{ width: "100%", height: "100%", borderRadius: 4 }}
+								contentFit="contain"
+							/>
+						</View>
 						<View style={{ flex: 1, gap: 4 }}>
 							<View
 								style={{
