@@ -24,7 +24,7 @@ export default function Cards() {
 				<Text
 					style={{
 						fontSize: 10,
-						fontWeight: 500,
+						fontFamily: "Poppins_500Medium",
 						letterSpacing: 6,
 						marginTop: 2,
 					}}
@@ -33,9 +33,15 @@ export default function Cards() {
 				</Text>
 
 				<View style={{ marginTop: 4 }}>
-					<Text style={{ fontSize: 12 }}>Instant miles.</Text>
-					<Text style={{ fontSize: 12 }}>Seriously secure.</Text>
-					<Text style={{ fontSize: 12 }}>{"Everyone's invited."}</Text>
+					<Text style={{ fontSize: 12, fontFamily: "Poppins_400Regular" }}>
+						Instant miles.
+					</Text>
+					<Text style={{ fontSize: 12, fontFamily: "Poppins_400Regular" }}>
+						Seriously secure.
+					</Text>
+					<Text style={{ fontSize: 12, fontFamily: "Poppins_400Regular" }}>
+						{"Everyone's invited."}
+					</Text>
 				</View>
 
 				<Pressable
@@ -55,7 +61,7 @@ export default function Cards() {
 						style={{
 							fontSize: 10,
 							color: "white",
-							fontWeight: 700,
+							fontFamily: "Poppins_700Bold",
 						}}
 					>
 						Apply now
@@ -104,10 +110,12 @@ export default function Cards() {
 						maxWidth: "50%",
 					}}
 				>
-					<Text style={{ fontWeight: 700 }}>Landers Cashback</Text>
+					<Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 16 }}>
+						Landers Cashback
+					</Text>
 					<View style={{ marginTop: 4, gap: 4 }}>
-						<Text style={{ fontSize: 12 }}>.... 7811</Text>
-						<Text style={{ fontSize: 12 }}>
+						<Text style={{ fontFamily: "Poppins_400Regular" }}>.... 7811</Text>
+						<Text style={{ fontFamily: "Poppins_400Regular" }}>
 							{formatToCurrency(15000)} available
 						</Text>
 					</View>
@@ -115,7 +123,9 @@ export default function Cards() {
 			</View>
 
 			<View style={{ marginTop: 16 }}>
-				<Text style={{ fontWeight: 700, fontSize: 12 }}>WALLET CARDS</Text>
+				<Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12 }}>
+					WALLET CARDS
+				</Text>
 
 				<View
 					style={{
@@ -143,7 +153,9 @@ export default function Cards() {
 								contentFit="contain"
 							/>
 						</View>
-						<Text style={{ fontSize: 12, fontWeight: 600 }}>yawausername</Text>
+						<Text style={{ fontSize: 12, fontFamily: "Poppins_600SemiBold" }}>
+							yawausername
+						</Text>
 					</View>
 
 					<View
@@ -162,7 +174,9 @@ export default function Cards() {
 								contentFit="contain"
 							/>
 						</View>
-						<Text style={{ fontSize: 12, fontWeight: 600 }}>yawausername</Text>
+						<Text style={{ fontSize: 12, fontFamily: "Poppins_600SemiBold" }}>
+							yawausername
+						</Text>
 					</View>
 				</View>
 			</View>
@@ -188,19 +202,27 @@ export default function Cards() {
 							alignItems: "center",
 						}}
 					>
-						<Text style={{ color: "#00a652", fontWeight: 600 }}>
+						<Text
+							style={{ color: "#00a652", fontFamily: "Poppins_600SemiBold" }}
+						>
 							{"Don't see your Maya card?"}
 						</Text>
 						<ChevronRight color={"#00a652"} size={16} />
 					</View>
-					<Text style={{ fontSize: 12, color: "#6c6868" }}>
+					<Text
+						style={{
+							fontSize: 12,
+							color: "#6c6868",
+							fontFamily: "Poppins_400Regular",
+						}}
+					>
 						Activate a card bought from any of our partners
 					</Text>
 				</View>
 			</View>
 
 			<View style={{ marginTop: 16, gap: 16 }}>
-				<Text style={{ fontWeight: 700, fontSize: 12 }}>
+				<Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12 }}>
 					GET A NEW WALLET CARD
 				</Text>
 				<View
@@ -213,7 +235,9 @@ export default function Cards() {
 						padding: 16,
 					}}
 				>
-					<Text style={{ fontWeight: 600, fontSize: 12 }}>Wallet Cards</Text>
+					<Text style={{ fontFamily: "Poppins_600SemiBold", fontSize: 12 }}>
+						Wallet Cards
+					</Text>
 
 					{/* Card and details */}
 					<View
@@ -248,12 +272,14 @@ export default function Cards() {
 									alignItems: "center",
 								}}
 							>
-								<Text style={{ fontSize: 12, fontWeight: 500 }}>
+								<Text style={{ fontSize: 14, fontFamily: "Poppins_500Medium" }}>
 									Yawa Mastercard
 								</Text>
 								<ChevronRight size={14} color={"#00a652"} />
 							</View>
-							<Text style={{ fontSize: 10, color: "#4a4949" }}>
+							<Text
+								style={{ color: "#4a4949", fontFamily: "Poppins_400Regular" }}
+							>
 								{formatToCurrency(200)}
 							</Text>
 						</View>
@@ -291,10 +317,14 @@ export default function Cards() {
 									alignItems: "center",
 								}}
 							>
-								<Text style={{ fontSize: 12, fontWeight: 500 }}>Yawa Visa</Text>
+								<Text style={{ fontSize: 14, fontFamily: "Poppins_500Medium" }}>
+									Yawa Visa
+								</Text>
 								<ChevronRight size={14} color={"#00a652"} />
 							</View>
-							<Text style={{ fontSize: 10, color: "#4a4949" }}>
+							<Text
+								style={{ color: "#4a4949", fontFamily: "Poppins_400Regular" }}
+							>
 								{formatToCurrency(200)}
 							</Text>
 						</View>
@@ -310,5 +340,5 @@ const styles = StyleSheet.create({
 		padding: 24,
 		paddingTop: 0,
 	},
-	cardTitle: { fontSize: 18, fontWeight: 700 },
+	cardTitle: { fontSize: 18, fontFamily: "Poppins_700Bold" },
 });
