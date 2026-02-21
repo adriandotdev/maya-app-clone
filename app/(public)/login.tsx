@@ -41,7 +41,7 @@ export default function Login() {
 
 						<View style={styles.numberContainer}>
 							<Text style={styles.mobileNumber}>+63 912 341 1134</Text>
-							<Text>John Doe</Text>
+							<Text style={styles.accountName}>John Doe</Text>
 						</View>
 
 						<View
@@ -74,6 +74,7 @@ export default function Login() {
 										top: 8,
 										left: 20,
 										fontSize: 12,
+										fontFamily: "NunitoSans_600SemiBold",
 									}}
 								>
 									Password
@@ -94,7 +95,13 @@ export default function Login() {
 									/>
 								</Pressable>
 							</View>
-							<Text style={{ color: "#00a652", fontWeight: 500 }}>
+							<Text
+								style={{
+									color: "#00a652",
+									fontFamily: "NunitoSans_600SemiBold",
+									fontSize: 16,
+								}}
+							>
 								Forgot your password?
 							</Text>
 						</View>
@@ -119,13 +126,25 @@ export default function Login() {
 								gap: 8,
 							}}
 						>
-							<Smartphone />
-							<Text style={{ fontWeight: 600 }}>Log in with screen lock</Text>
+							<Smartphone size={18} />
+							<Text style={{ fontFamily: "NunitoSans_600SemiBold" }}>
+								Log in with screen lock
+							</Text>
 						</View>
 
 						<View style={{ display: "flex", flexDirection: "row", gap: 8 }}>
-							<Text style={{ fontWeight: "600" }}>Not you?</Text>
-							<Text style={{ fontWeight: "600", color: "#00a652" }}>
+							<Text
+								style={{ fontFamily: "NunitoSans_600SemiBold", fontSize: 16 }}
+							>
+								Not you?
+							</Text>
+							<Text
+								style={{
+									fontFamily: "NunitoSans_600SemiBold",
+									color: "#00a652",
+									fontSize: 16,
+								}}
+							>
 								Switch account
 							</Text>
 						</View>
@@ -146,12 +165,12 @@ export default function Login() {
 const styles = StyleSheet.create({
 	title: {
 		fontSize: 48,
-		fontWeight: 700,
 		color: "#00a652",
+		fontFamily: "NunitoSans_600SemiBold",
 	},
 	mobileNumber: {
 		fontSize: 24,
-		fontWeight: 600,
+		fontFamily: "NunitoSans_500Medium",
 	},
 	numberContainer: {
 		display: "flex",
@@ -167,6 +186,7 @@ const styles = StyleSheet.create({
 		paddingBottom: 12,
 		paddingTop: 28,
 		borderRadius: 16,
+		fontFamily: "NunitoSans_500Medium",
 	},
 	loginButton: {
 		backgroundColor: "#00a652",
@@ -180,7 +200,10 @@ const styles = StyleSheet.create({
 	},
 	loginText: {
 		color: "white",
-		fontWeight: "black",
+		fontFamily: "NunitoSans_700Bold",
 		fontSize: 16,
+	},
+	accountName: {
+		fontFamily: "NunitoSans_500Medium",
 	},
 });
