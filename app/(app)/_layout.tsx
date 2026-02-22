@@ -15,7 +15,7 @@ export default function AppLayout() {
 			<Stack
 				screenOptions={{
 					headerShown: false,
-					animation: "slide_from_left", // or fade, simple_push, etc
+					animation: "slide_from_left",
 				}}
 			/>
 			<FloatingNav />

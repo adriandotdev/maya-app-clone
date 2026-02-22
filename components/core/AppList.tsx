@@ -58,7 +58,7 @@ export default function AppList({
 									borderRadius: 10,
 								}}
 							>
-								<item.icon color={"#00a652"} size={18} />
+								<item.icon color={"#01723a"} size={18} />
 							</View>
 
 							<Text

@@ -1,50 +1,31 @@
-# Welcome to your Expo app 👋
+# Maya App Clone using React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Screens
 
-## Get started
+### Login
 
-1. Install dependencies
+<img src="./docs/images/login.png" width="300"/>
 
-   ```bash
-   npm install
-   ```
+### Wallet
 
-2. Start the app
+<img src="./docs/images/wallet.png" width="300">
 
-   ```bash
-   npx expo start
-   ```
+### Savings
 
-In the output, you'll find options to open the app in a
+<img src="./docs/images/savings.png" width="300"/>
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Credit
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+<img src="./docs/images/credit.png" width="300"/>
 
-## Get a fresh project
+### Loans
 
-When you're ready, run:
+<img src="./docs/images/loans.png" width="300"/>
 
-```bash
-npm run reset-project
-```
+### Cards
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+<img src="./docs/images/cards.png" width="300"/>
 
-## Learn more
+### Services
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+<img src="./docs/images/services.png" width="300"/>
