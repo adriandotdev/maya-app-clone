@@ -90,8 +90,6 @@ export default function Cards() {
 						height: 100,
 						maxWidth: 170,
 						width: "100%",
-						// backgroundColor: "gray",
-						flex: 1,
 						borderRadius: 12,
 					}}
 				>
@@ -194,7 +192,7 @@ export default function Cards() {
 				}}
 			>
 				<Text>🧐</Text>
-				<View>
+				<View style={{ maxWidth: 300 }}>
 					<View
 						style={{
 							display: "flex",

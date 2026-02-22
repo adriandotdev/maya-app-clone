@@ -1,35 +1,14 @@
+import AppList from "@/components/core/AppList";
 import {
-	ArrowDownLeft,
-	ArrowUpRight,
-	CoinsIcon,
-	LucideIcon,
-	PiggyBank,
-	ScanQrCode,
-} from "lucide-react-native";
+	doMoreItems,
+	earnRewardsItems,
+	growMoneyItems,
+	mainServices,
+	secureBankingItems,
+	shopAndPlayItems,
+} from "@/data/dummy";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
 
-const mainServices: { icon: LucideIcon; label: string }[] = [
-	{
-		icon: ArrowDownLeft,
-		label: "Cash in",
-	},
-	{
-		icon: ArrowUpRight,
-		label: "Send Money",
-	},
-	{
-		icon: PiggyBank,
-		label: "Bank Transfer",
-	},
-	{
-		icon: CoinsIcon,
-		label: "Request Money",
-	},
-	{
-		icon: ScanQrCode,
-		label: "Pay with QR",
-	},
-];
 export default function Services() {
 	return (
 		<ScrollView contentContainerStyle={styles.content}>
@@ -69,6 +48,7 @@ export default function Services() {
 									textAlign: "center",
 									fontFamily: "Poppins_500Medium",
 									fontSize: 12,
+									color: "#717171",
 								}}
 							>
 								{item.label}
@@ -76,6 +56,39 @@ export default function Services() {
 						</View>
 					))}
 				</View>
+			</View>
+
+			<View style={{ marginTop: 16, gap: 16, padding: 16 }}>
+				<AppList
+					categoryBackgroundColor="#e8f8eb"
+					category="Secure banking"
+					items={secureBankingItems}
+				/>
+
+				<AppList
+					categoryBackgroundColor="#f1f7ff"
+					category="Shop and play"
+					items={shopAndPlayItems}
+				/>
+
+				<AppList
+					hasSecondRow={false}
+					categoryBackgroundColor="#fffcef"
+					category="Grow my money"
+					items={growMoneyItems}
+				/>
+
+				<AppList
+					categoryBackgroundColor="#efeefe"
+					category="Do more"
+					items={doMoreItems}
+				/>
+
+				<AppList
+					categoryBackgroundColor="#fff1fd"
+					category="Earn rewards"
+					items={earnRewardsItems}
+				/>
 			</View>
 		</ScrollView>
 	);
