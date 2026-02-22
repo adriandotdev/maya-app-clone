@@ -19,7 +19,7 @@ export default function SavingsApplicationSection() {
 			}}
 		>
 			<Image
-				source={require("../../assets/images/carousel/card.png")}
+				source={require("../../assets/images/card.png")}
 				style={{
 					width: 150,
 					height: 150,

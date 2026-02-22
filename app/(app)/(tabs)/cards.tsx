@@ -70,7 +70,7 @@ export default function Cards() {
 				</Pressable>
 
 				<Image
-					source={require("../../assets/images/mayablackcard.png")}
+					source={require("../../../assets/images/mayablackcard.png")}
 					style={{
 						width: 160,
 						height: 120,
@@ -96,7 +96,7 @@ export default function Cards() {
 					}}
 				>
 					<Image
-						source={require("../../assets/images/landers.png")}
+						source={require("../../../assets/images/landers.png")}
 						style={{ width: "100%", height: "100%", borderRadius: 12 }}
 						contentFit="cover"
 					/>
@@ -148,7 +148,7 @@ export default function Cards() {
 							}}
 						>
 							<Image
-								source={require("../../assets/images/card.png")}
+								source={require("../../../assets/images/card.png")}
 								style={{ width: "100%", height: "100%", borderRadius: 12 }}
 								contentFit="contain"
 							/>
@@ -169,7 +169,7 @@ export default function Cards() {
 							}}
 						>
 							<Image
-								source={require("../../assets/images/card2.png")}
+								source={require("../../../assets/images/card2.png")}
 								style={{ width: "100%", height: "100%", borderRadius: 12 }}
 								contentFit="contain"
 							/>
@@ -259,7 +259,7 @@ export default function Cards() {
 							}}
 						>
 							<Image
-								source={require("../../assets/images/card.png")}
+								source={require("../../../assets/images/card.png")}
 								style={{ width: "100%", height: "100%", borderRadius: 4 }}
 								contentFit="contain"
 							/>
@@ -304,7 +304,7 @@ export default function Cards() {
 							}}
 						>
 							<Image
-								source={require("../../assets/images/card.png")}
+								source={require("../../../assets/images/card.png")}
 								style={{ width: "100%", height: "100%", borderRadius: 4 }}
 								contentFit="contain"
 							/>
