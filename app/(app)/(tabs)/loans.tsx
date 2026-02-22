@@ -214,7 +214,6 @@ export default function Loans() {
 				style={{
 					borderWidth: 1,
 					borderColor: "#d4d1d1",
-					// paddingBottom: 16,
 					borderRadius: 16,
 				}}
 			>

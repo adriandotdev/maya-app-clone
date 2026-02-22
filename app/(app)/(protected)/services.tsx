@@ -1,4 +1,5 @@
 import AppList from "@/components/core/AppList";
+import Breadcrumb from "@/components/core/Breadcrumb";
 import {
 	doMoreItems,
 	earnRewardsItems,
@@ -7,7 +8,14 @@ import {
 	secureBankingItems,
 	shopAndPlayItems,
 } from "@/data/dummy";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import {
+	AlertCircleIcon,
+	LetterText,
+	SettingsIcon,
+	ShieldCheck,
+	User,
+} from "lucide-react-native";
+import { Platform, ScrollView, StyleSheet, Text, View } from "react-native";
 
 export default function Services() {
 	return (
@@ -90,12 +98,27 @@ export default function Services() {
 					items={earnRewardsItems}
 				/>
 			</View>
+
+			<View
+				style={{
+					borderWidth: 1,
+					borderColor: "#d4d1d1",
+					borderRadius: 16,
+					margin: 16,
+				}}
+			>
+				<Breadcrumb icon={ShieldCheck} label="Security center" />
+				<Breadcrumb icon={AlertCircleIcon} label="Help center" />
+				<Breadcrumb icon={User} label="My profile" />
+				<Breadcrumb icon={SettingsIcon} label="Settings" />
+				<Breadcrumb icon={LetterText} label="About Yawa" hideBorderBottom />
+			</View>
 		</ScrollView>
 	);
 }
 
 const styles = StyleSheet.create({
 	content: {
-		paddingTop: 0,
+		paddingTop: Platform.OS === "ios" ? 16 : 24,
 	},
 });
