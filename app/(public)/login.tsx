@@ -37,7 +37,7 @@ export default function Login() {
 					<View
 						style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
 					>
-						<Text style={styles.title}>yawa</Text>
+						<Text style={styles.title}>maya</Text>
 
 						<View style={styles.numberContainer}>
 							<Text style={styles.mobileNumber}>+63 912 341 1134</Text>

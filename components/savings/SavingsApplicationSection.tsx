@@ -51,7 +51,7 @@ export default function SavingsApplicationSection() {
 						color: "white",
 					}}
 				>
-					Yawa Black journey?
+					Maya Black journey?
 				</Text>
 				<View
 					style={{

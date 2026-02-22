@@ -111,7 +111,7 @@ export default function Services() {
 				<Breadcrumb icon={AlertCircleIcon} label="Help center" />
 				<Breadcrumb icon={User} label="My profile" />
 				<Breadcrumb icon={SettingsIcon} label="Settings" />
-				<Breadcrumb icon={LetterText} label="About Yawa" hideBorderBottom />
+				<Breadcrumb icon={LetterText} label="About Maya" hideBorderBottom />
 			</View>
 		</ScrollView>
 	);

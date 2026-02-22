@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 export default function Footer() {
 	return (
 		<View style={styles.container}>
-			<Text style={styles.footerTitle}>yawa</Text>
+			<Text style={styles.footerTitle}>maya</Text>
 			<Text
 				style={{
 					textAlign: "center",
@@ -11,7 +11,7 @@ export default function Footer() {
 					fontFamily: "Poppins_400Regular",
 				}}
 			>
-				Yawa Philippines, Inc. is regulated by the Bangko Sentral ng Pilipinas -{" "}
+				Maya Philippines, Inc. is regulated by the Bangko Sentral ng Pilipinas -{" "}
 				<Text style={{ color: "#00a652" }}>bsp.gov.ph</Text>
 			</Text>
 			<Text

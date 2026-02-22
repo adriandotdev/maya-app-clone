@@ -20,7 +20,7 @@ export default function Cards() {
 					overflow: "visible",
 				}}
 			>
-				<Text style={styles.cardTitle}>yawa black</Text>
+				<Text style={styles.cardTitle}>maya black</Text>
 				<Text
 					style={{
 						fontSize: 10,
@@ -152,7 +152,7 @@ export default function Cards() {
 							/>
 						</View>
 						<Text style={{ fontSize: 12, fontFamily: "Poppins_600SemiBold" }}>
-							yawausername
+							mayausername
 						</Text>
 					</View>
 
@@ -173,7 +173,7 @@ export default function Cards() {
 							/>
 						</View>
 						<Text style={{ fontSize: 12, fontFamily: "Poppins_600SemiBold" }}>
-							yawausername
+							mayausername
 						</Text>
 					</View>
 				</View>
@@ -271,7 +271,7 @@ export default function Cards() {
 								}}
 							>
 								<Text style={{ fontSize: 14, fontFamily: "Poppins_500Medium" }}>
-									Yawa Mastercard
+									Maya Mastercard
 								</Text>
 								<ChevronRight size={14} color={"#00a652"} />
 							</View>
@@ -316,7 +316,7 @@ export default function Cards() {
 								}}
 							>
 								<Text style={{ fontSize: 14, fontFamily: "Poppins_500Medium" }}>
-									Yawa Visa
+									Maya Visa
 								</Text>
 								<ChevronRight size={14} color={"#00a652"} />
 							</View>

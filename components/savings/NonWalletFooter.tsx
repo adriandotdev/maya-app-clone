@@ -15,7 +15,7 @@ export default function NonWalletFooter({
 					gap: 4,
 				}}
 			>
-				<Text style={styles.footerTitle}>yawa</Text>
+				<Text style={styles.footerTitle}>maya</Text>
 				<View
 					style={{
 						backgroundColor: "#00a652",
@@ -44,7 +44,7 @@ export default function NonWalletFooter({
 					fontFamily: "Poppins_400Regular",
 				}}
 			>
-				Yawa Savings is powered by Yawa Bank, Inc.
+				Maya Savings is powered by Maya Bank, Inc.
 			</Text>
 			{!hidePDICNotice && (
 				<Text
@@ -55,7 +55,7 @@ export default function NonWalletFooter({
 						fontFamily: "Poppins_400Regular",
 					}}
 				>
-					Deposits are insured by PDIC up to 1,000,000 per depositor. Yawa Bank,
+					Deposits are insured by PDIC up to 1,000,000 per depositor. Maya Bank,
 					Inc. is regulated by the Bangko Sentral ng Pilipinas. Learn more at{" "}
 					<Text style={{ color: "#00a652" }}>www.bsp.gov.ph</Text>
 				</Text>

@@ -32,7 +32,7 @@ export default function Header(props: HeaderProps) {
 				}}
 			>
 				<View style={styles.usernameContainer}>
-					<Text style={styles.username}>@yawausername</Text>
+					<Text style={styles.username}>@mayausername</Text>
 					<ChevronRight color={"#00a652"} />
 				</View>
 
