@@ -55,7 +55,7 @@ export default function FloatingNav() {
 					style={{
 						color: navigation === "wallet" ? "black" : "black",
 						fontSize: 16,
-						fontWeight: 700,
+						fontFamily: "Poppins_700Bold",
 					}}
 				>
 					m
